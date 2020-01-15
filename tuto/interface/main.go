@@ -26,7 +26,10 @@ func (b *StructB) BBB(val int) string {
 func main() {
 	var c InterFaceA
 	c = &StructA{} // Struct A는 AAA(), BBB() 를 모두 갖고 있기 때문에 대입이 가능
-	// c = &StructB{} // *StructB does not implement InterFaceA (missing AAA method) -> interface에 올라가있는 함수는 모두 구현이 되어있어야함!
+	// c = StructA{} // interfaceA는 pointer 형 타입만을 포함하고 있기 때문에 할당 불가능
+
+	// var d InterFaceA
+	// d = &StructB{} // *StructB does not implement InterFaceA (missing AAA method) -> interface에 올라가있는 함수는 모두 구현이 되어있어야함!
 
 	fmt.Println(c.BBB(3))
 }
