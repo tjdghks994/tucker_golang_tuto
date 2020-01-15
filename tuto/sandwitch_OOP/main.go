@@ -57,10 +57,10 @@ func (o *AppleJam) GetOneSpoon() SpoonOfJam {
 
 // interface define
 type Jam interface {
-	GetOneSpoon() SpoonOfJam // 함수명이 GetOneSpoon()이며 return값이 SpoonOfJam 인 함수를 갖고 있는 애들을 묶어줌
+	GetOneSpoon() SpoonOfJam // 함수명이 GetOneSpoon이며 인풋은 ()이며 return값이 SpoonOfJam 인 함수를 갖고 있는 애들을 묶어줌
 }
 type SpoonOfJam interface {
-	String() string // 함수명이 String()이며 return값이 string 인 함수를 갖는 애들을 묶어줌
+	String() string // 함수명이 String이며 인풋은 ()이며 return값이 string 인 함수를 갖는 애들을 묶어줌
 }
 
 func main() {
