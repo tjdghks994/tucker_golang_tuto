@@ -1,8 +1,9 @@
 package main
 
 import (
-	tr "tucker_golang_tuto/tuto/datastruct"
 	"fmt"
+
+	tr "github.com/tjdghks994/tucker_golang_tuto/tuto/datastruct"
 )
 
 func main() {

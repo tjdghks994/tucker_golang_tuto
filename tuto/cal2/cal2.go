@@ -22,8 +22,12 @@ func main() {
 
 	n2, _ := strconv.Atoi(line)
 
-	fmt.Printf("입력하신 숫자는 %d, %d 입니다 \n", n1, n2)
-
+	if (n1 < 36656) && (n2 < 36656) {
+		fmt.Printf("입력하신 숫자는 %d, %d 입니다 \n", n1, n2)
+	} else {
+		fmt.Println("입력 범위를 초과했습니다.")
+		os.Exit(0)
+	}
 	fmt.Println("연산자를 입력하세요!")
 
 	line, _ = reader.ReadString('\n')
