@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	heap "tucker_golang_tuto/tuto/datastruct"
+
+	heap "github.com/tjdghks994/tucker_golang_tuto/tuto/datastruct"
 )
 
 func main() {
